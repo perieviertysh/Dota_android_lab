@@ -1,6 +1,5 @@
-package com.example.androidlab
+package com.example.androidlab.main
 
-import DotaScreen
 import android.os.Bundle
 import android.view.WindowManager
 import androidx.activity.ComponentActivity
@@ -12,7 +11,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.core.view.WindowCompat
-import com.example.androidlab.ui.theme.AndroidLabTheme
+import com.example.androidlab.components.Screen
+import com.example.androidlab.ui.packages.AndroidLabTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -35,7 +35,7 @@ fun MainScreen() {
             modifier = Modifier.fillMaxSize(),
             color = MaterialTheme.colorScheme.background
         ) {
-            DotaScreen()
+            Screen()
         }
     }
 }
